@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+  font-family: monospace;
+}
+
+#calculations {
+  font-size: 2em;
+}
+
+#current-earnings {
+  font-size: 8em;
+}
+
+#input-toggle-clock {
+  font-size : 1.5em;
+  font-family: monospace;
+}
+
+form .input-group {
+  margin-bottom: 2em;
+}
+
+/* #calculations .rate, #calculations .duration { */
+  /* font-weight: 800; */
+/* } */
