@@ -52,9 +52,11 @@ form.querySelector('#input-toggle-clock').addEventListener('click', (event) => {
     STATE.clockedTime += Date.now() - STATE.startTime
     main.stop()
     event.target.value = 'Start'
+    document.querySelector("link[rel~='icon']").href = "https://em-content.zobj.net/source/google/412/money-with-wings_1f4b8.png"
   } else {
     STATE.startTime = Date.now()
     main.start()
     event.target.value = 'Stop'
+    document.querySelector("link[rel~='icon']").href = "https://em-content.zobj.net/source/animated-noto-color-emoji/356/money-with-wings_1f4b8.gif"
   }
 })
