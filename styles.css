@@ -1,25 +1,28 @@
 body {
-  text-align: center;
-  font-family: monospace;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    font-family: Arial, sans-serif; /* Font style */
+    text-align: center;
+    /* font-family: monospace; */
 }
 
 #calculations {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 #current-earnings {
-  font-size: 8em;
+    font-size: 8em;
 }
 
 #input-toggle-clock {
-  font-size : 1.5em;
-  font-family: monospace;
+    font-family: Arial, sans-serif; /* Font style */
+    font-size : 1.5em;
 }
 
 form .input-group {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 /* #calculations .rate, #calculations .duration { */
-  /* font-weight: 800; */
+    /* font-weight: 800; */
 /* } */
