@@ -3,7 +3,7 @@ body {
     color: #e0e0e0; /* Light text color */
     font-family: Arial, sans-serif; /* Font style */
     text-align: center;
-    /* font-family: monospace; */
+    overflow: hidden;
 }
 
 #calculations {
