@@ -17,7 +17,13 @@ const STATE = {
 document.title = `[0.00€] ${STATE.pageTitle}`
 
 const updateLabels = (earnedTime) => {
-    elemCalculationsDisplay.querySelector('.duration').textContent = `${Math.floor(earnedTime / 1000 / 60 / 60)} hours ${Math.floor(earnedTime / 1000 / 60 % 60)} minutes`
+    const hours = Math.floor(earnedTime / 1000 / 60 / 60)
+    const minutes = Math.floor(earnedTime / 1000 / 60 % 60)
+    let minute_str = "minutes"
+    if (minutes == 1) {
+        minute_str = "minute"
+    }
+    elemCalculationsDisplay.querySelector('.duration').textContent = `${hours} hours ${minutes} ${minute_str}`
     const earnings = calculateEarnings(STATE.hourlyWage, earnedTime)
     if (earnings.toFixed(2) != prevEarnings.toFixed(2)) {
         scale = 110
