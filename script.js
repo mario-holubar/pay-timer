@@ -20,7 +20,7 @@ const updateLabels = (earnedTime) => {
     elemCalculationsDisplay.querySelector('.duration').textContent = `${Math.floor(earnedTime / 1000 / 60 / 60)} hours ${Math.floor(earnedTime / 1000 / 60 % 60)} minutes`
     const earnings = calculateEarnings(STATE.hourlyWage, earnedTime)
     if (earnings.toFixed(2) != prevEarnings.toFixed(2)) {
-        scale += 10
+        scale = 110
     }
     prevEarnings = earnings
     const earningsString = numberFormat.format(earnings)
